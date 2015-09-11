@@ -19,7 +19,7 @@ test('measuring execution time', function(t) {
 
   time.start();
   var executionTime = time.end();
-  
+
   t.ok(typeof executionTime === 'string', 'time.end() is a string');
   t.ok(executionTime.slice(-2) === 'ms', 'time.end() ends in "ms"');
   t.ok(Number(executionTime.slice(0, -2)), 'time.end()\'s all but the last two characters can be coerced to a number');

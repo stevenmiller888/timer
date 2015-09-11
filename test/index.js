@@ -15,12 +15,12 @@ test('measuring execution time', function(t) {
 
   t.ok(typeof time === 'object', 'time is an object');
   t.ok(typeof time.start === 'function', 'time.start is a function');
-  t.ok(typeof time.end === 'function', 'time.end is a function');
+  t.ok(typeof time.stop === 'function', 'time.stop is a function');
 
   time.start();
-  var executionTime = time.end();
+  var executionTime = time.stop();
 
-  t.ok(typeof executionTime === 'string', 'time.end() is a string');
-  t.ok(executionTime.slice(-2) === 'ms', 'time.end() ends in "ms"');
-  t.ok(Number(executionTime.slice(0, -2)), 'time.end()\'s all but the last two characters can be coerced to a number');
+  t.ok(typeof executionTime === 'string', 'time.stop() is a string');
+  t.ok(executionTime.slice(-2) === 'ms', 'time.stop() ends in "ms"');
+  t.ok(Number(executionTime.slice(0, -2)), 'time.stop()\'s all but the last two characters can be coerced to a number');
 });

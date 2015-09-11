@@ -4,7 +4,7 @@
 [![build status][circle-image]][circle-url]
 [![license][license-image]][license-url]
 
-Record accurate measurements of execution time. It's really simple, first run `time.start();`, do some stuff, then run `time.end();`. That's all.
+Record accurate measurements of execution time. It's really simple, first run `timer.start();`, do some stuff, then run `timer.stop();`. That's all.
 
 ## Installation
 
@@ -18,8 +18,8 @@ var timer = require('basic-timer');
 // start
 timer.start();
 
-// end
-timer.end();
+// stop
+timer.stop();
 ```
 
 ## Example
@@ -36,7 +36,7 @@ for (var i = 0; i < arr.length; i++) {
   arr[i] = Math.random();
 }
 
-timer.end();
+timer.stop();
 ```
 
 ## License

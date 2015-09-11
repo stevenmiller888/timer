@@ -1,5 +1,9 @@
 
-0.0.2 / September 12, 2015
+0.1.0 / September 11, 2015
+
+  * Changed .end() to .stop()
+
+0.0.2 / September 11, 2015
 
   * Bump version
 

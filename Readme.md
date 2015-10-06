@@ -13,7 +13,8 @@ Record accurate measurements of execution time. It's really simple, first run `t
 ## Usage
 
 ```js
-var timer = require('basic-timer');
+var Timer = require('basic-timer');
+var timer = Timer();
 
 // start
 timer.start();
@@ -27,7 +28,9 @@ timer.stop();
 Some things are incredibly interesting to measure. Check out this simple example of timing how long it takes to iterate through an array of length 10000 and assigning each element a [random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) number. Play around with adding and removing 0s from the array declaration and measuring the difference in execution time.
 
 ```
-var timer = require('basic-timer');
+var Timer = require('basic-timer');
+var timer = Timer();
+
 var arr = new Array(10000);
 
 timer.start();

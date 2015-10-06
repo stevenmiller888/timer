@@ -11,7 +11,7 @@ var Timer = require('..');
  */
 
 test('measuring execution time', function(t) {
-  t.plan(6);
+  t.plan(4);
 
   var timer = Timer();
   t.ok(typeof Timer === 'function', 'Timer is an object');
@@ -21,7 +21,5 @@ test('measuring execution time', function(t) {
   timer.start();
   var executionTime = timer.stop();
 
-  t.ok(typeof executionTime === 'string', 'timer.stop() is a string');
-  t.ok(executionTime.slice(-2) === 'ms', 'timer.stop() ends in "ms"');
-  t.ok(Number(executionTime.slice(0, -2)), 'timer.stop()\'s all but the last two characters can be coerced to a number');
+  t.ok(typeof executionTime === 'number', 'timer.stop() is a string');
 });

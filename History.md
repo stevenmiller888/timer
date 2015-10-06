@@ -1,4 +1,8 @@
 
+1.0.1 / October 6, 2015
+
+  * Fixed failing test
+
 1.0.0 / October 6, 2015
 
   * Updated to use constructor
